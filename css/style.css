@@ -22,7 +22,6 @@ nav li img{
 }
 
 nav li a{
-    font-size: 30px;
     text-decoration: none;
     color: #fff; 
     font-size: 2.4rem;
@@ -32,6 +31,7 @@ nav li a:hover{
     color: #fff;
     border-bottom: 1px solid #fff;
     text-decoration: none;
+    font-size: 2.3rem;
 }
 
 nav{
@@ -44,7 +44,7 @@ nav{
 
 h1{
     text-align: center;
-    font-size: 3rem;
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2%;
 }
@@ -596,8 +596,8 @@ button{
 
 /* HOME  */
 
-.titulo_home{
-    font-size: 4rem;
+h1{
+    font-size: 4rem !important;
     color: transparent !important;
     -webkit-text-stroke: #000000 3px;
 }
@@ -606,7 +606,7 @@ button{
     padding: 2%;
 }
 
-body.darkmode .titulo_home{
+body.darkmode h1{
     font-size: 4rem;
     color: transparent !important;
     -webkit-text-stroke: gold 1px;
@@ -634,6 +634,46 @@ body.darkmode .titulo_home{
     text-align: justify;
 }
 
+
+.home button{
+    padding: 0.1em 0.8em;
+    width:max-content;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+    z-index: 1;
+    height:5vh;
+}
+.home button a{
+    text-decoration: none;
+    color: #17C3B2;
+}
+
+.home button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(50deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+
+.home button:hover::before {
+    width: 100%;
+   }
+
+.home button:hover a{
+    color: #111;
+   }
 
 
 
@@ -686,7 +726,7 @@ body.darkmode .titulo_home{
     
     .home{
         gap: 50px;
-            grid-auto-rows: 40rem;
+            grid-auto-rows: 30rem;
     }
     
     footer{
@@ -698,7 +738,7 @@ body.darkmode .titulo_home{
     @media only screen and (max-height: 844px) {
 
         .home{
-            gap: 200px;
+            gap: 70px;
         }
     }
 
@@ -760,8 +800,8 @@ body.darkmode .titulo_home{
 
     }
     .home{
-        gap: 200px;
-         margin-bottom: 20vh;
+        gap: 70px;
+         margin-bottom: 2vh;
     }
 
 }
@@ -769,8 +809,8 @@ body.darkmode .titulo_home{
 @media only screen and (max-width: 400px) {
 
     .home{
-        gap: 200px;
-        margin-bottom: 20vh;
+        gap: 70px;
+        margin-bottom: 2vh;
     }
 
 }
@@ -778,8 +818,8 @@ body.darkmode .titulo_home{
 @media only screen and (max-width: 390px) {
 
     .home{
-        gap: 200px;
-        margin-bottom: 20vh;
+        gap: 70px;
+        margin-bottom: 2vh;
     }
 
 }
@@ -789,7 +829,7 @@ body.darkmode .titulo_home{
 
     .home{
         gap: 50px;
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
 
 }
@@ -808,8 +848,8 @@ body.darkmode .titulo_home{
 
     }
     .home{
-        gap: 200px;
-        margin-bottom: 20vh;
+        gap: 70px;
+        margin-bottom: 2vh;
     }
 
 }
