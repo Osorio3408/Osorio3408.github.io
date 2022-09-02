@@ -1,0 +1,819 @@
+*{  
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li img{
+    width: 5vw;
+    translate: 0px 4px;
+}
+
+nav li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 2.4rem;
+}
+
+nav li a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
+nav{
+    padding-right:46%;
+    background-color: #000000;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2%;
+}
+
+.peliculas{
+    display: grid;
+    gap: 65px;
+    grid-auto-flow: dense;
+    grid-auto-rows:28rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 20fr));
+    width: 93%;
+    margin: auto;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.cj{
+    box-shadow: 4px 7px 5px 0px rgba(194,194,194,1);
+}
+
+.cj .parrafo{
+    text-align: center;
+}
+
+.cj img {
+    width:100%;
+    height: 100%;
+}
+
+
+.material-symbols-outlined{
+    translate: 3px 0px;
+
+}
+
+
+
+/*----------------------LIBROS----------------------*/
+
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 100%;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+}
+
+.card .back{
+   transform: perspective(600px) rotateY(180deg);
+   background: rgb(3, 35, 54);
+   padding: 15px;
+   color: #f3f3f3;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   text-align: center;
+   box-shadow: 0 5px 10px #fff;
+}
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 60px;
+    line-height: 20px;
+}
+
+.card .back .link a{
+    color: #f3f3f3;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(300px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.libros{
+    display: grid;
+    gap: 4%;
+    grid-auto-flow: dense;
+    grid-auto-rows:28rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 20fr));
+    width: 93%;
+    margin: auto;
+}
+
+.imagen1{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen2{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen3{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen4{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen5{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen6{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    white-space: 2px;
+}
+
+
+/* ------------------SERIES------------------ */
+.stars-01{
+    content: " ";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+}
+h2{
+    color: white;
+    text-align: center;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 4ch;
+    margin-top: 65px;
+    letter-spacing: 1px;
+    -webkit-box-reflect:below 3px linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+.com{
+    font-size: 2px;
+  color:darkgray;
+ 
+}
+.com1{
+    font-size: 1px;
+  color:darkgray;
+}
+
+.contenedor {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 195px;
+}
+.contenedor2{
+    display: flex;
+    margin-top: 75px;
+    margin-left: 195px;
+}
+.serie1{
+    position: relative;
+    background: transparent;
+    margin-left: 9px;
+    padding: 2px;
+    width: 180px;
+    height: 315px;
+    box-shadow: 0 5px 10px #fff;
+    
+}
+.serie1 img{
+    height: 264px;
+}
+
+
+.texto{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.color1{
+    color: white;
+   width: 5px;
+}
+.color1:hover{
+    color:darkgrey;
+}
+.color{
+    color: white;
+ width: 5px;
+}
+.color:hover{
+    color:darkgrey;
+    
+}
+.serie2{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    padding: 2px;
+    width: 190px;
+    height: 316px;
+    box-shadow: 0 5px 10px #fff;
+}
+.texto2{
+    position: relative;
+    text-align: center;
+    font-size: 2ch;
+}
+
+.serie3{
+    position: relative;
+    background: transparent;
+   margin-left:70px;
+    padding: 2px;
+    width: 180px;
+  
+    box-shadow: 0 5px 10px #fff;
+ }
+ .serie3 img{
+     height: 263px;
+ }
+ .texto3{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+ .serie4{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    padding: 2px;
+    width: 176px;
+    box-shadow: 0 5px 10px #fff;
+ }
+
+.serie4 img{
+     height: 264px;
+     width: 176px;
+ }
+ .texto4{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+ .serie5{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    padding: 2px;
+    width: 195px;
+    box-shadow: 0 5px 10px #fff;
+ }
+ .texto5{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+.serie6{
+    position: relative;
+    background: transparent;
+    margin-left: 9px;
+    width: 185px;
+   
+    box-shadow: 0 5px 10px #fff;
+}
+.serie6 img{
+    height: 245px;
+}
+.texto6{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.serie7{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    width: 190px;
+    box-shadow: 0 5px 10px #fff;
+   
+}
+.texto7{
+    position: relative;
+    font-size: 3ch;
+    text-align: center;
+    padding: 2px;
+}
+.serie7 img{
+    height: 245px;
+}
+.serie8{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    padding: 2px;
+    width: 167px;
+    box-shadow: 0 5px 10px #fff;
+}
+.serie8 img{
+    height: 245px;
+}
+.texto8{
+    position: relative;
+    text-align: center;
+    font-size: 3ch;
+}
+
+.serie9{
+    position: relative;
+    background: transparent;
+    margin-left: 70px;
+    width: 191px;
+    
+    box-shadow: 0 5px 10px #fff;
+}
+.serie9 img{
+    height: 245px;
+}
+.texto9{
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.serie10{
+    position: relative;
+    background: transparent;
+    margin-left: 280px;
+    margin-top: -300px;
+    padding: 2px;
+    width: 185px;
+    box-shadow: 0 5px 10px #fff;
+    
+}
+.serie10 img{
+    height: 245px;
+}
+
+.texto10{
+    position: relative;
+   text-align: center;
+    font-size: 20px;
+}
+.l1{
+    margin-left: 180px;
+    position: absolute;
+    margin-top: 45px;
+   
+    
+}
+
+.l2{
+    margin-left: 670px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+.l3{
+    margin-left: 1310px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: rgb(109, 109, 109);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1%;
+} 
+
+.activo{
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #fff;
+    position:absolute;
+    bottom:auto;
+    width: 100%;
+    margin-top: 7%;
+    
+
+}
+
+.redes_sociales img{
+    width: 2.5vw;
+    margin:0.8%;
+}
+
+.correo{
+    font-size:x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.copyright{
+
+    background-color: #000000;
+    color: rgb(170, 170, 170);
+    bottom:0;
+    width:100%;
+}
+
+.redes_sociales img:hover{
+    border-radius: 40%;
+    box-shadow: 4px 7px 5px 5px rgba(194,194,194,1);
+}
+
+/* MODO OSCURO */ /*TOGGLE*/
+
+body.darkmode{
+    background-color: #000000;
+    
+}
+body.darkmode h1{
+    color: #fff;
+}
+
+body.darkmode h3{
+    color: rgb(255, 255, 255);
+}
+
+body.darkmode h4{
+    color: rgb(255, 255, 255);
+}
+
+body.darkmode p{
+    color: rgb(255, 255, 255);
+}
+
+#bgdark{
+    background-color: #000000;
+}
+button{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    width: 10vw;
+}
+
+#bdark{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    width: 45px;
+    height: 20px;
+    border: 1.2px solid #Fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.toggle_caja{
+    margin-top: 30%;
+}
+.toggle{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:20px;
+    height: 17px;
+    transform: scale(.7);
+    background: #fff;
+    border-radius: 50px;
+
+}
+#bdark.active .toggle{
+    left: 20px;
+    background-color: #000000;
+}
+#bdark.active{
+    background-color: #Fff;
+
+}
+
+
+
+.material-symbols-outlined{
+    color: #Fff;
+}
+
+
+
+
+
+
+/* HOME  */
+
+.titulo_home{
+    font-size: 4rem;
+    color: transparent !important;
+    -webkit-text-stroke: #000000 3px;
+}
+
+.home .cj{
+    padding: 2%;
+}
+
+body.darkmode .titulo_home{
+    font-size: 4rem;
+    color: transparent !important;
+    -webkit-text-stroke: gold 1px;
+}
+
+.home{
+    padding-top: 1%;
+    display: grid;
+    gap: 280px;
+    grid-auto-rows:30rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 20fr));
+    width: 80%;
+    margin: auto;
+    margin-bottom: 9.4%;
+}
+.home img{
+    object-fit: contain;
+}
+
+.home footer{
+    margin-top: 50%;
+}
+
+.home p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+/* Resposive */
+
+
+@media only screen and (max-width: 3000px) {
+ 
+    
+    .home{
+        gap:280px;
+    }
+}
+
+ 
+@media only screen and (max-height: 1500px) {
+    
+    .peliculas{
+        gap:70px;
+    }
+    .libros{
+        gap:70px;
+    }
+
+    .home{
+        margin-bottom: 19vh;
+    }
+
+    
+}
+
+@media only screen and (max-height: 670px) {
+    
+    .peliculas{
+        gap:70px;
+    }
+    
+    .libros{
+        gap:70px;
+    }
+    .home{
+        margin-bottom: 10%;
+    }
+    
+    
+    .home{
+        gap: 50px;
+            grid-auto-rows: 40rem;
+    }
+    
+    footer{
+        margin-top: 6%;
+    }
+    
+    }
+
+    @media only screen and (max-height: 844px) {
+
+        .home{
+            gap: 200px;
+        }
+    }
+
+    /* ANCHO */
+
+ @media only screen and (max-width: 1172px) {
+ 
+
+     .redes_sociales img{
+ 
+        width:6vw;
+        margin: 3%;
+    }
+
+  }
+  
+ 
+ @media only screen and (max-width: 840px) {
+ 
+     .menu{
+         flex-direction: column;
+         text-align: center;
+         padding-bottom: 2%;
+     }
+     nav{
+         padding-right: 0px;
+         text-align:right;
+     }
+     nav li img{
+         width: 15vw;
+     }
+     .redes_sociales img{
+ 
+        width:7vw;
+        margin: 3%;
+    }
+    .cj{
+        margin: auto;
+    }
+
+    .home{
+        gap: 600px;
+        margin-bottom: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    
+    .cj{
+        margin: auto;
+    }
+    #bdark{
+        margin-top:5%;
+    }
+    .redes_sociales img{
+ 
+        width:10vw;
+
+    }
+    .home{
+        gap: 200px;
+         margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .home{
+        gap: 200px;
+        margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .home{
+        gap: 200px;
+        margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    
+
+    .home{
+        gap: 50px;
+        margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    
+    .cj{
+        margin: auto;
+    }
+    #bdark{
+        margin-top:5%;
+    }
+    .redes_sociales img{
+ 
+        width:10vw;
+
+    }
+    .home{
+        gap: 200px;
+        margin-bottom: 20vh;
+    }
+
+}
+
+
+
+
