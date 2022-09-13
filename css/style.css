@@ -25,6 +25,7 @@ nav li a{
     text-decoration: none;
     color: #fff; 
     font-size: 2.4rem;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
 }
 
 nav li a:hover{
@@ -541,6 +542,7 @@ body.darkmode p{
 }
 
 #bgdark{
+
     background-color: #000000;
 }
 button{
@@ -561,6 +563,7 @@ button{
 }
 
 .toggle_caja{
+    
     margin-top: 30%;
 }
 .toggle{
@@ -676,9 +679,70 @@ body.darkmode h1{
    }
 
 
+   /* BUSCADOR */
 
 
 
+.Bcar-1:hover{
+    box-shadow: 0 1px 5px 7px gold;
+}
+.Bcar-1:focus{
+    box-shadow: 0 1px 5px 7px gold;
+}
+
+.Bcar{
+    position:fixed;
+    padding: 5px;
+    margin-top: 16px;
+    height: 70px;
+    top: 2vh;
+}
+.Bcar input{
+   
+    width: 0px;
+    height: 38px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid #FFC300;
+    border-radius: 30px;
+    transition:all 0.6s ease;
+}
+.Bcar-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:black;
+    color: aliceblue;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 1px 20px 1px #fff;
+}
+
+.Bcar:hover input{
+    width: 255px;
+    
+}
+.Bcar input:focus{
+    width: 255px;
+   
+}
+
+.Bcar-1 .material-symbols-outlined{
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+}
+
+.filtro{
+    display: none;
+}
 
 
 
@@ -784,6 +848,11 @@ body.darkmode h1{
         margin-bottom: 50vh;
     }
 
+    .Bcar{
+        margin-top: 0;
+        position: relative;
+    }
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -792,7 +861,7 @@ body.darkmode h1{
         margin: auto;
     }
     #bdark{
-        margin-top:5%;
+        margin-top:2vh;
     }
     .redes_sociales img{
  
