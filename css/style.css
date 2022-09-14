@@ -691,11 +691,12 @@ body.darkmode h1{
 }
 
 .Bcar{
-    position:fixed;
+    position:absolute;
     padding: 5px;
     margin-top: 16px;
     height: 70px;
     top: 2vh;
+    border-radius: 30px;
 }
 .Bcar input{
    
@@ -738,6 +739,7 @@ body.darkmode h1{
     position: absolute;
     top: 1vh;
     left: 1vh;
+    border-radius: 30px;
 }
 
 .filtro{
