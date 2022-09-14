@@ -4,11 +4,11 @@ document.addEventListener("keyup", e=>{
   
         if (e.key ==="Escape")e.target.value = ""
   
-        document.querySelectorAll(".cj").forEach(fruta =>{
+        document.querySelectorAll(".cj").forEach(seccion =>{
   
-            fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-              ?fruta.classList.remove("filtro")
-              :fruta.classList.add("filtro")
+          seccion.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+              ?seccion.classList.remove("filtro")
+              :seccion.classList.add("filtro")
         })
   
     }

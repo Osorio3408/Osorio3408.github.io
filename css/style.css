@@ -546,10 +546,7 @@ body.darkmode p{
     background-color: #000000;
 }
 button{
-    background: #000000;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    width: 10vw;
+
 }
 
 #bdark{
@@ -680,6 +677,68 @@ body.darkmode h1{
 
 
    /* BUSCADOR */
+
+.categorias{
+
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 4%;
+}
+
+.categorias a{
+    text-decoration: none;
+    color: #000;
+    line-height:90px;
+
+}
+
+.listado_categorias{
+    padding-top: 10px;
+    font-size:2rem;
+    margin-left:10px;
+    text-align:left;
+}
+
+.btn_categoria{
+    height:min-content;
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
