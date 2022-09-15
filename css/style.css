@@ -750,7 +750,7 @@ body.darkmode h1{
 }
 
 .Bcar{
-    position:fixed;
+    position:absolute;
     padding: 5px;
     margin-top: 16px;
     height: 70px;
