@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./source/img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/Script2.js"></script>
     <title>Peliculas</title>
 </head>
 <body id="body">
@@ -52,10 +55,19 @@
     
     <h1>Peliculas Favoritas</h1>
 
+    <div class="category_list">
+        <a href="#" class="category_item" category="all">Todo</a>
+        <a href="#" class="category_item" category="comedia">Comedia</a>
+        <a href="#" class="category_item" category="ficcion">Ficción</a>
+        <a href="#" class="category_item" category="terror">Terror</a>
+        <a href="#" class="category_item" category="drama">Drama</a>
+        <a href="#" class="category_item" category="animacion">Animación</a>
+    </div>
+
     <section class="peliculas">
 
 
-        <div class="cj pelicula1 card">
+        <div class="cj pelicula1 card" category="comedia">
             <div class="face front">
                 <img src="../source/img/pelicula.jpg" alt="">
             </div>
@@ -70,7 +82,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula2 card">
+        <div class="cj pelicula2 card" category="ficcion">
             <div class="face front">
                 <img src="../source/img/pelicula1.jpg" alt="">
             </div>
@@ -85,7 +97,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula3 card">
+        <div class="cj pelicula3 card" category="comedia">
             <div class="face front">
                 <img src="../source/img/pelicula2.jpg" alt="">
             </div>
@@ -100,7 +112,7 @@
              </div>   
         </div>
 
-        <div class="cj pelicula4 card">
+        <div class="cj pelicula4 card" category="drama">
             <div class="face front">
                 <img src="../source/img/pelicula3.jpg" alt="">
             </div>
@@ -115,7 +127,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula5 card">
+        <div class="cj pelicula5 card" category="animacion">
             <div class="face front">
                 <img src="../source/img/pelicula4.jpg" alt="">
             </div>
@@ -129,7 +141,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula6 card">
+        <div class="cj pelicula6 card" category="animacion">
             <div class="face front">
                 <img src="../source/img/pelicula5.jpg" alt="">
             </div>
@@ -144,7 +156,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula7 card">
+        <div class="cj pelicula7 card" category="animacion">
             <div class="face front">
                 <img src="../source/img/pelicula6.jpg" alt="">
             </div>
@@ -159,7 +171,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula8 card">
+        <div class="cj pelicula8 card" category="terror">
             <div class="face front">
                <img src="../source/img/pelicula7.jpg" alt="">
             </div>

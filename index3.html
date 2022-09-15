@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./source/img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/Script2.js"></script>
     <title>Series</title>
 </head>
 <body id="body">
@@ -47,11 +50,20 @@
         </nav>
     </header>
 
-    <h1><span>Series Favoritas</span></h1>
+    <h1>Series Favoritas</h1>
+
+    <div class="category_list">
+        <a href="#" class="category_item" category="all">Todo</a>
+        <a href="#" class="category_item" category="drama">Drama</a>
+        <a href="#" class="category_item" category="terror">Terror</a>
+        <a href="#" class="category_item" category="accion">Acción</a>
+        <a href="#" class="category_item" category="animacion">Animación</a>
+    </div>
+
     <section class="peliculas">
 
 
-        <div class="cj pelicula1 card">
+        <div class="cj pelicula1 card" category="drama">
             <div class="face front">
                 <img src="../source/img/serie1.jpg" alt="">
             </div>
@@ -65,7 +77,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula2 card">
+        <div class="cj pelicula2 card" category="drama">
             <div class="face front">
                 <img src="../source/img/serie2.jpg" alt="">
             </div>
@@ -79,7 +91,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula3 card">
+        <div class="cj pelicula3 card" category="drama">
             <div class="face front">
                 <img src="../source/img/serie3.jpg" alt="">
             </div>
@@ -93,7 +105,7 @@
             </div>
         </div>
       
-        <div class="cj pelicula4 card">
+        <div class="cj pelicula4 card" category="terror">
             <div class="face front">
                 <img src="../source/img/serie4.jpg" alt="">
             </div>
@@ -107,7 +119,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula5 card">
+        <div class="cj pelicula5 card" category="accion">
             <div class="face front">
                 <img src="../source/img/serie5.jpg" alt="">
             </div>
@@ -121,7 +133,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula6 card">
+        <div class="cj pelicula6 card" category="drama">
             <div class="face front">
                 <img src="../source/img/serie6.jpg" alt="">
             </div>
@@ -135,7 +147,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula7 card">
+        <div class="cj pelicula7 card" category="terror">
             <div class="face front">
                 <img src="../source/img/serie7.jpg" alt="">
             </div>
@@ -149,7 +161,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula8 card">
+        <div class="cj pelicula8 card" category="animacion">
             <div class="face front">
                 <img src="../source/img/serie8.jpg" alt="">
             </div>
@@ -163,7 +175,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula9 card">
+        <div class="cj pelicula9 card" category="accion">
             <div class="face front">
                 <img src="../source/img/serie9.jpg" alt="">
             </div>
@@ -177,7 +189,7 @@
             </div>
         </div>
 
-        <div class="cj pelicula10 card">
+        <div class="cj pelicula10 card" category="accion">
             <div class="face front">
                 <img src="../source/img/serie10.jpg" alt="">
             </div>
@@ -191,7 +203,6 @@
             </div>
         </div>
    </section>
-
    <footer>
     <div class="redes_sociales">
         <a href="https://wa.me/+573016371351"><img src="../source/img/whatsapp.png" alt=""></a>

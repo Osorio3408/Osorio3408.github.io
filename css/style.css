@@ -750,12 +750,11 @@ body.darkmode h1{
 }
 
 .Bcar{
-    position:absolute;
+    position:fixed;
     padding: 5px;
     margin-top: 16px;
     height: 70px;
     top: 2vh;
-    border-radius: 30px;
 }
 .Bcar input{
    
@@ -798,7 +797,6 @@ body.darkmode h1{
     position: absolute;
     top: 1vh;
     left: 1vh;
-    border-radius: 30px;
 }
 
 .filtro{
@@ -984,6 +982,117 @@ body.darkmode h1{
 
 }
 
+/*filtrosss*/
+
+.category_list{
+    /* display: inline-table; */
+    /*flex-direction: column;*/
+    width: 100%;
+    margin-bottom: 6%;
+   
+}
+
+.category_list .category_item{
+    width: 100%;
+    padding: 25px ;
+    background: #000000;
+
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    box-shadow:0px 2px 5px #fff;
+}
+
+.category_list .ct_item-active{
+    background:#2D3E50;
+}
+
+.category_list .ct_item-active{
+    background:#2D3E50;
+}
+
+
+.products-list{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+        line-height: 14vh;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
 
 
 
